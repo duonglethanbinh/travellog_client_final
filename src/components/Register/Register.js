@@ -30,7 +30,8 @@ class Register extends Component {
         }
 
         register(newUser).then(res => {
-            this.props.history.push(`/signin`)
+            alert('Success');
+            this.props.history.push(`/signin`);
         })
     }
 

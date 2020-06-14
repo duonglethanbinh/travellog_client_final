@@ -6,8 +6,7 @@ class Footer extends Component {
         return (
             <footer className="page-footer font-small fixed-bottom">
                 <div className="footer-copyright text-center py-3">
-                    Posted by: <a href="mailto:17520279@gm.uit.edu.vn">
-                        Dương Lê Thanh Bình</a>
+                    © 2020.  All rights reserved.
                 </div>
             </footer>
         )

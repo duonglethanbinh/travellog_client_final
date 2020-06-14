@@ -1,19 +1,7 @@
 import React, { Component } from 'react';
 import './Profile.css';
-import jwt_decode from 'jwt-decode';
+import { getProfile } from '../Actions/UserFunctions';
 
-//We can use this
-// import { getProfile } from '../Actions/UserFunctions';
-// componentDidMount() {
-//   const token = localStorage.usertoken
-//   getProfile(token).then(res => {
-//     this.setState({
-//       first_name: res.first_name,
-//       last_name: res.last_name,
-//       email: res.email
-//     })
-//   })
-// }
 
 class Profile extends Component {
   constructor() {
@@ -28,11 +16,12 @@ class Profile extends Component {
 
   componentDidMount() {
     const token = localStorage.usertoken
-    const decoded = jwt_decode(token)
-    this.setState({
-      first_name: decoded.first_name,
-      last_name: decoded.last_name,
-      email: decoded.email
+    getProfile(token).then(res => {
+      this.setState({
+        first_name: res.first_name,
+        last_name: res.last_name,
+        email: res.email
+      })
     })
   }
 

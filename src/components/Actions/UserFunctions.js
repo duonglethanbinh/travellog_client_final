@@ -2,7 +2,7 @@ import axios from 'axios'
 
 export const register = newUser => {
     return axios
-        .post('https://travellog-7th-backend.herokuapp.com/users/register', {
+        .post('https://travellog-server-final.herokuapp.com/users/register', {
             first_name: newUser.first_name,
             last_name: newUser.last_name,
             email: newUser.email,
@@ -15,7 +15,7 @@ export const register = newUser => {
 
 export const login = user => {
     return axios
-        .post('https://travellog-7th-backend.herokuapp.com/users/login', {
+        .post('https://travellog-server-final.herokuapp.com/users/login', {
             email: user.email,
             password: user.password
         })
@@ -36,17 +36,16 @@ export const login = user => {
         })
 }
 
-//Not use
-// export const getProfile = token => {
-//     return axios
-//         .get('http://localhost:4000/users/profile', {
-//             headers: { Authorization: ` ${token}` }
-//         })
-//         .then(response => {
-//             console.log(response)
-//             return response.data
-//         })
-//         .catch(err => {
-//             console.log(err)
-//         })
-// }
+export const getProfile = token => {
+    return axios
+        .get('https://travellog-server-final.herokuapp.com/users/profile', {
+            headers: { Authorization: ` ${token}` }
+        })
+        .then(response => {
+            console.log(response)
+            return response.data
+        })
+        .catch(err => {
+            console.log(err)
+        })
+}

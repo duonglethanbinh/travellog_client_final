@@ -8,11 +8,12 @@ class About extends Component {
                 <h3>About me</h3>
                 <img src={Profile} alt="Profile Icon" />
                 <p>
-                    Hi there! My name is Thanh Bình. This is my first website developed by using HTML, CSS,
-                    Javascript.<br /> All of the pictures and content are collected from many sources. So, if you have any problems with the content, please
-                contact me through my email: <span><a href="mailto:17520279@gm.uit.edu.vn" style={{ textDecoration: 'none', margin: '5px' }}>
-                        17520279@gm.uit.edu.vn</a></span><br />
-                I will probably delete it.<br />Best regard.
+                    Hi there! We are Thanh Bình and Hoàng Long. Our webapp was developed with HTML, CSS,
+                    Javascript.<br /> All pictures and content are collected from many sources. So, if you have any problems with the content, please
+                contact us via <span><a href="mailto:17520279@gm.uit.edu.vn" style={{ textDecoration: 'none', margin: '5px' }}>
+                        17520279@gm.uit.edu.vn</a></span> or <span><a href="mailto:17521305@gm.uit.edu.vn" style={{ textDecoration: 'none', margin: '5px' }}>
+                        17521305@gm.uit.edu.vn</a></span><br />
+                We will probably delete it.<br />Best regards.
             </p>
             </div>
         );

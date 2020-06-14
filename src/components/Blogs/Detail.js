@@ -15,7 +15,7 @@ class Detail extends Component {
     }
     deleteSubmit = (event) => {
         if (window.confirm("Delete this comment?")) {
-            axios.delete(`https://travellog-7th-backend.herokuapp.com/blogs/${this.props.Pid}`)
+            axios.delete(`https://travellog-server-final.herokuapp.com/blogs/${this.props.Pid}`)
                 .then(res => {
                     alert('Delete completed');
                     window.location.reload();

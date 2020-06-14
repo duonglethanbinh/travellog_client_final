@@ -13,7 +13,7 @@ class Update extends Component {
     }
 
     componentDidMount() {
-        axios.get(`https://travellog-7th-backend.herokuapp.com/places/${this.state.updateid}/data`)
+        axios.get(`https://travellog-server-final.herokuapp.com/places/${this.state.updateid}/data`)
             .then(res => {
                 this.setState(
                     {
@@ -43,11 +43,11 @@ class Update extends Component {
         console.log(this.props.match.params)
         console.log(this.state.updateid);
         console.log(typeof (place));
-        axios.patch(`https://travellog-7th-backend.herokuapp.com/places/${this.props.match.params.Pid}`, place)
+        axios.patch(`https://travellog-server-final.herokuapp.com/places/${this.props.match.params.Pid}`, place)
             .then(res => {
                 console.log(res);
                 console.log(res.data);
-                axios.get(`https://travellog-7th-backend.herokuapp.com/places/${this.state.updateid}/data`)
+                axios.get(`https://travellog-server-final.herokuapp.com/places/${this.state.updateid}/data`)
                     .then(res => {
                         this.setState({ datablog: res.data })
                     }).catch(err => {

@@ -18,7 +18,7 @@ class RouterURL extends Component {
                 <Route exact path="/">
                     <Welcome />
                 </Route>
-                <Route path="/aboutme">
+                <Route path="/aboutus">
                     <About />
                 </Route>
                 <Route path="/contact">

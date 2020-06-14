@@ -57,8 +57,8 @@ class Blogs extends Component {
         });
     }
     componentDidMount() {
-        let one = "https://travellog-7th-backend.herokuapp.com/blogs";
-        let two = "https://travellog-7th-backend.herokuapp.com/places"
+        let one = "https://travellog-server-final.herokuapp.com/blogs";
+        let two = "https://travellog-server-final.herokuapp.com/places"
         const requestOne = axios.get(one);
         const requestTwo = axios.get(two);
         trackPromise(
@@ -87,7 +87,7 @@ class Blogs extends Component {
             submitted: false,
             submitResult: false
         });
-        fetch('https://travellog-7th-backend.herokuapp.com/blogs',
+        fetch('https://travellog-server-final.herokuapp.com/blogs',
             {
                 method: "POST",
                 headers: {
@@ -103,7 +103,7 @@ class Blogs extends Component {
             .then((json) => {
                 this.setState({ submitted: true, submitResult: true });
                 alert("Succeeded. Check on the first pages.");
-                axios.get('https://travellog-7th-backend.herokuapp.com/blogs')
+                axios.get('https://travellog-server-final.herokuapp.com/blogs')
                     .then(res => {
                         const blogslist = res.data;
                         this.setState({ blogslist });
@@ -115,7 +115,7 @@ class Blogs extends Component {
     }
     submitSearchForm = (search_id) => {
         console.log(search_id);
-        axios.get(`https://travellog-7th-backend.herokuapp.com/blogs${search_id}`)
+        axios.get(`https://travellog-server-final.herokuapp.com/blogs${search_id}`)
             .then(res => {
                 const blogslist = res.data;
                 this.setState({ blogslist, currentPage: 1 });

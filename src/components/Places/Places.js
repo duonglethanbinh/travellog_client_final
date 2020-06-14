@@ -14,7 +14,7 @@ class Places extends Component {
     }
     componentDidMount() {
         trackPromise(
-            axios.get('https://travellog-7th-backend.herokuapp.com/places')
+            axios.get('https://travellog-server-final.herokuapp.com/places')
                 .then(res => {
                     const placeslist = res.data;
                     this.setState({ placeslist });
@@ -114,11 +114,11 @@ class Places extends Component {
         if (checkValue.includes(this.state.name))
             alert('Invalid name. This name already have. Choose other name.')
         else {
-            axios.post(`https://travellog-7th-backend.herokuapp.com/places/`, blog)
+            axios.post(`https://travellog-server-final.herokuapp.com/places/`, blog)
                 .then(res => {
                     console.log(res);
                     console.log(res.data);
-                    axios.get(`https://travellog-7th-backend.herokuapp.com/places`)
+                    axios.get(`https://travellog-server-final.herokuapp.com/places`)
                         .then(res => {
                             this.setState({ placeslist: res.data })
                         }).catch(err => {
@@ -131,10 +131,10 @@ class Places extends Component {
     deleteSubmit = (_id) => {
         console.log(_id)
         if (window.confirm("Delete this picture?")) {
-            axios.delete(`https://travellog-7th-backend.herokuapp.com/places/${_id}`)
+            axios.delete(`https://travellog-server-final.herokuapp.com/places/${_id}`)
                 .then(res => {
                     alert('Delete completed');
-                    axios.get(`https://travellog-7th-backend.herokuapp.com/places`)
+                    axios.get(`https://travellog-server-final.herokuapp.com/places`)
                         .then(res => {
                             this.setState({ placeslist: res.data })
                         }).catch(err => {
