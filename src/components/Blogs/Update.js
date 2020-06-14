@@ -15,7 +15,7 @@ class Update extends Component {
     }
 
     componentDidMount() {
-        axios.get(`https://travellog-server-final.herokuapp.com/${this.state.updateid}/data`)
+        axios.get(`https://travellog-server-final.herokuapp.com/blogs/${this.state.updateid}/data`)
             .then(res => {
                 this.setState(
                     {
