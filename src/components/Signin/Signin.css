@@ -1,0 +1,10 @@
+.login-form {
+    margin-top: 60px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.login-form .row {
+   margin: 20px;
+   padding: 20px 0;
+}

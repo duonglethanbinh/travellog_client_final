@@ -1,0 +1,88 @@
+.blog_content {
+    border-radius: 5px;
+    background-color: #fcdc97;
+    margin-top: 62px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.blog_content button {
+    margin: 10px 0;
+    font-size: 16px;
+    padding: 10px 25px;
+}
+
+.blog_content form {
+    margin: 0 10%;
+}
+
+.blog_content label {
+    margin: 0;
+    font-weight: 600;
+}
+
+.blog_content select[type=text], .blog_content input[type=text], .blog_content input[type=email], .blog_content select, .blog_content textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+
+.blog_content input[type=submit] {
+    background-color: #a0f749;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.blog_content input[type=submit]:hover {
+    color: white;
+    background-color: #45a049;
+}
+
+.search-box {
+    text-align: center;
+    margin: 10px 10%;
+}
+
+.search {
+    justify-content: center;
+}
+
+.search-box h4 {
+    font-size: 16px;
+}
+
+.search button {
+    background-color: #a0f749;
+    margin: 5px;
+}
+
+.search button:hover {
+    color: white;
+    background-color: #45a049;
+}
+
+.pagination {
+    margin: 15px;
+    padding: 10px;
+}
+
+.pagination h4 {
+    margin: 10px;
+    color: black;
+    font-size: 18px;
+}
+
+.pagination li {
+    background-color: rgb(203, 255, 211);
+    color: black;
+    font-size: 18px;
+    border-radius: 10px;
+    line-height: 18px;
+    margin: 2px;
+}

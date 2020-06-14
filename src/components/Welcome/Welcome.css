@@ -1,0 +1,27 @@
+.welcomebox {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.jumbotron {
+    font-size: 20px;
+    color: rgb(14, 11, 44);
+    background-color: #fcdc97;
+    margin-top: 62px;
+}
+
+.welcome_content h1 {
+    color: rgb(19, 29, 117);
+}
+
+.card_login {
+    margin: 0 60px 60px 60px;
+    background-color: #f5e9cf;
+    border-radius: 50px;
+}
+
+.btn_edit {
+    margin: 5px;
+    border-radius: 20px;
+}

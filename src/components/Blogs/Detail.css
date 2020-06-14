@@ -1,0 +1,40 @@
+body{
+    background-color: #fcdc97;
+}
+.main_box {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.main_box h2 {
+    font-size: 24px;
+    margin: 20px;
+}
+
+.main_box h4 {
+    font-size: 18px;
+    margin: 20px 0;
+    color: blue;
+}
+.main_box h4 i {
+    font-size: 16px;
+    margin: 20px 0;
+    color: rgb(170, 20, 20);
+}
+.main_box .paras {
+    font-size: 20px;
+    margin: 40px;
+    padding: 10px 40px;
+    text-align: left;
+    border-bottom-right-radius: 70px;
+    border-bottom: 2px solid #1c6861;
+    border-right: 2px solid #1c6861;
+    box-shadow: 8px 8px #98e7df;
+    background-color: white;
+}
+.main_box .paras p{
+    width: 100%;
+}
+.main_box .paras button{
+    margin: 10px;
+}

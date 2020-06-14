@@ -1,0 +1,42 @@
+/* about me intro */
+
+.about_content {
+    background-color: #fcdc97;
+    margin: 62px 0;
+    margin-bottom: 56px;
+    text-align: center;
+}
+
+.about_content h3 {
+    font-size: 28px;
+    padding: 25px 0;
+}
+
+.about_content img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25%;
+}
+
+.about_content p {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 10px 60px;
+    font-size: 24px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+@media only screen and (max-width: 700px) {
+      .about_content img {
+        width: 50%;
+    }
+    .about_content p {
+        margin: 10px;
+        width: 85%;
+        font-size: 20px;
+        line-height: 2;
+    }
+}

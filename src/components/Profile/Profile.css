@@ -1,0 +1,10 @@
+.profile_content{
+    margin-top: 62px;
+    padding: 10px;
+}
+.profile_content table{
+    background-color: bisque;
+}
+.profile_content table td {
+    border: 1px solid cadetblue;
+}

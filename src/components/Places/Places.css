@@ -1,0 +1,57 @@
+#reviews.album {
+    background-color: #fcdc97;
+    margin: 80px 0;
+}
+
+.card-body .card-text {
+    text-align: center;
+}
+
+.card-body .card-text a {
+    color: #1c6861;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.addmore {
+    border-radius: 50px;
+}
+
+.main_box img {
+    margin: 50px 10px;
+    width: 50%;
+    border: 20px solid whitesmoke;
+    border-radius: 10px;
+}
+
+.place-box {
+    text-align: center;
+    margin: 10px 10%;
+}
+
+.place-box button {
+    margin: 10px;
+}
+
+.place-box ul li a {
+    text-decoration: none;
+}
+
+.place-box ul li {
+    display: inline-block;
+    background-color: honeydew;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid springgreen;
+    border-radius: 5px;
+}
+
+.place-box ul li:hover {
+    font-weight: 600;
+}
+.place-form span{
+    border: 1px solid #45a049;
+    background-color: rgb(203, 255, 211);
+    margin: 0 1px;
+}
