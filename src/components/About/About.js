@@ -5,7 +5,7 @@ class About extends Component {
     render() {
         return (
             <div className="about_content" id="aboutme">
-                <h3>About me</h3>
+                <h3>About us</h3>
                 <img src={Profile} alt="Profile Icon" />
                 <p>
                     Hi there! We are Thanh Bình and Hoàng Long. Our webapp was developed with HTML, CSS,
